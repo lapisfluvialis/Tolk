@@ -1,0 +1,21 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+    id 'java'
+}
+
+group 'io.github.lapisfluvialis'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.javassist:javassist:3.27.0-GA'
+}
+
+jar {
+    manifest {
+        attributes 'Premain-Class': 'io.github.lapisfluvialis.tolk.Tolk'
+    }
+}
