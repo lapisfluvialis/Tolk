@@ -9,7 +9,7 @@ $ java -javaagent:tolk.jar=ly,a,ja_jp.json -jar server.jar nogui
 2. `void loadFromJson(java.io.InputStream,java.util.function.BiConsumer)`
 3. path to lang file
 
-- 1st & 2nd args are in the obfuscation map: `server.json`
+- 1st & 2nd args are in the obfuscation map: `server.txt`
 
 ## Build
 ```sh
